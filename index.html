@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Juego SVG</title>
+    <style>
+        svg{
+            height: 600px;
+            width: 100%;
+            border-style: solid;
+            border-color: black;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <div>Vidas:
+            <div id="contVida">5</div>
+        </div>
+        <div>Tiempo:
+            <div id="contTiempo">20</div>
+        </div>
+    </p>
+    <svg id="svg">
+        <text id="ganado" x="600" y="300" font-size="55" style="fill: rgba(0, 0, 0, 0);">HAS GANADO!</text>
+        <text id="ganado" x="600" y="300" font-size="55" style="fill: rgba(0, 0, 0, 0);">HAS PERDIDO!</text>
+        <circle id="IA1" cx="300" cy="230" r="30" fill="yellow" stroke="black"/>
+        <circle id="IA2" cx="400" cy="450" r="30" fill="red" stroke="black"/>
+        <circle id="IA3" cx="60" cy="500" r="30" fill="brown" stroke="black"/>
+        <circle id="IA4" cx="520" cy="245" r="30" fill="purple" stroke="black"/>
+        <circle id="IA5" cx="820" cy="380" r="30" fill="green" stroke="black"/>
+        <circle id="jugador" cx="40" cy="40" r="30" fill="pink" stroke="black"/>
+    </svg>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
